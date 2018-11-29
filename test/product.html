@@ -1,0 +1,60 @@
+<?php
+require('connection.php');
+$msg="";
+if(isset($_POST['Add Pizza']))
+{
+    $Name = stripslashes(trim($_POST['Name']));
+    $Code = stripslashes(trim($_POST['Code']));
+    $Image = stripslashes(trim($_POST['Image']));
+    $Price = stripslashes(trim($_POST['Price']));
+    
+
+$query = mysqli_query($conn, "INSERT INTO product values ('null','$Name','$Code','$Image','$Price')");
+        $result = mysqli_query($conn, $query);
+
+if($query )
+{
+    $msg="Correct";
+    header("location:view product.php");
+}
+
+else
+{
+    $msg="Incorrect";
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="bg-img">
+        <br><br>
+        <div class="wrapper">
+            <h1>Products</h1>
+            <fieldset>
+                <form method="POST" action="">
+                    Name<br>
+                    <input type="text" placeholder="" name="Name"/><br>
+                    Code<br>
+                    <input type="number" placeholder="" name="Code"><br>
+                    Image<br>
+                    <input type="file" placeholder="" name="Image" ><br>
+                    Price<br>
+                    <input type="text" placeholder="" name="Price"/><br>
+                    <?php echo $msg;?>
+                    <input type="submit" name="Add Pizza"><br>
+                        <button><a href="Register.php">Register </a></button><br>
+                </form>
+            </fieldset>
+        </div>
+    </div>   
+    
+</body>
+</html>

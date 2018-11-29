@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Using A Mate -->
+	<title>Home Page</title>
+	<!-- Add A CSS Hyperlink -->
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="icon" type="image/ico" href="Leviticus/LeviticusP.png" />
+	
+<style>
+
+
+.ss-content {max-width:950px;
+			margin:auto;
+			box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4), 0 8px 22px 0 rgba(0, 0, 0, 0.21);
+			}
+
+</style>
+</head>
+
+<body>
+		<!--creating a navigation container-->
+		<div id="navbar">
+				<a class="active" href="Index.html">HOME</a>
+				<a href="About Us.html">ABOUT US</a>
+				<a href="Gallery.html">GALLERY</a>
+				<a href="Meet The Team.html">THE TEAM</a>
+				<a href="Contacts.html">CONTACTS</a>
+				<a href="Blog.html">BLOG</a>
+		</div>
+			<br><br>
+	<div class="clear"></div>
+	
+		<div class="ss-content">
+			<img class="mySlides" src="myPizza/Dominos-presenta-sus-nuevas-pizzas-sin-gluten.jpg" style="width:100%" height="450px" border-radius="20px">
+			<img class="mySlides" src="myPizza/pizza35.jpg" style="width:100%" height="450px">
+			<img class="mySlides" src="myPizza/slide-pizza-1020x398.jpg" style="width:100%" height="450px">
+		</div>
+		<br>
+		<div class="ViewMore"><a href="Gallery.html">View More</a></div>
+
+<br><br><br>
+<div class="clear"></div>
+<div class="col01">
+<div class="p2">
+<p>Taking pictures is a passionate activity by dedicated individuals, especially for artists. Leviticus Photography makes taking pictures easy. Any of our photographs can become a beautiful, and a clean artwork. Whether your photography career is just starting, or if you’ve already got a big following, Leviticus Photography is a great platform to showcase your visual artistic photography artwork. We can even upload your pictures for free and then upgrade later.
+</p></div>
+</div>
+<br>
+<hr>
+
+<div class="col">
+<div class="iconbar">
+<div class="sicons">
+			<a href="https://www.facebook.com/"> <img src="logo/circle-facebook_318-10967.jpg" width="3%"></a>
+			<a href="https://www.instagram.com/"> <img src="logo/images.png" width="3%"></a>
+			<a href="https://twitter.com/login"> <img src="logo/social-twitter-in-acircle-logo_318-28676.jpg" width="3%"></a>
+			<a href="https://plus.google.com/discover"> <img src="logo/social-googleplus-circle_318-29383.jpg" width="3%"></a>
+			<a href="https://www.snapchat.com/"> <img src="logo/icone-snapchat.png" width="3.4%"></a>
+			<a href="https://za.pinterest.com/"> <img src="logo/pinterest-round_318-26597.jpg" width="3%"></a>
+	</div>
+	</div>
+
+<br>
+<div class="clear"></div>
+<footer>&copy;2018 designed by <i>Leviticus Photography</i></footer>
+</div>
+<script>
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+var i;
+var x = document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none"; 
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1} 
+x[myIndex-1].style.display = "block"; 
+setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+
+</script>
+
+</body>
+</html>

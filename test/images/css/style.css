@@ -1,0 +1,260 @@
+/* creating a navigation container */
+#navbar				    {
+                    overflow: hidden;
+                    background-color: #ffffff;
+                    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4), 0 8px 22px 0 rgba(0, 0, 0, 0.21);
+
+}
+
+#navbar a			    {
+                    float:right;
+                    color:#b4a892;
+                    text-align: center;
+                    padding: 25px 20px;
+                    text-decoration: none;
+                    font-size: 18px;
+}
+
+#navbar a:hover 	{
+                    padding-top: 15px;
+                    transition: all 0.4s ease-in-out;
+}
+
+#navbar a.active	{
+                    padding-top: 15px;
+                    font-size: 18px;
+                    transition: all 0.4s ease-in-out;
+}
+
+.content-image    {
+                    width:100%;
+                    position: relative;
+}
+/* End */
+/* Add a footer */
+footer            {
+	                   position:bottom;
+                        background-color: #ffffff;
+	                  color:#b4a892;
+	                  text-align:center;
+                        font-size: 17px;	
+}
+/* End */
+/* Social Media icorn bar */
+.sicons		        {
+                    padding:5px;
+                    text-align:center;
+}
+
+.iconbar a:hover	{
+                    padding:15px;
+}
+/* End */
+/* Styling the form */
+input             {
+                    width: 94%;
+                    border: #123;
+                    border-radius: 20px;
+                    padding: 15px;
+                    margin-top: 12px;
+                    margin-bottom: 14px;
+                    font-size: 16px;
+                    transition: all 0.4s ease-in-out;
+                    opacity: 0.9;
+}
+
+input[type="submit"]{
+                    width: 50%;
+                    border: none;
+                    cursor: pointer;
+                    background-color:#463634;
+                    color: #ffffff;
+                    border-radius: 25px;
+                    margin-left: 25%;
+                    padding: 15px;
+                    margin-top: 12px;
+                    margin-bottom: 14px;
+                    font-weight: bold;
+                    font-size: 20px;
+                    transition: all 0.4s ease-in-out;
+                    opacity: 0.9;
+}
+
+input[type="submit"]:hover {
+                    background-color:#ffffff;
+                    color:#e64933;
+                    transition: all 0.4s ease-in-out;
+                    opacity: 0.9;
+}
+
+button            {
+    			     width: 50%;
+    			     border: none;
+    			     cursor: pointer;
+   				     background-color:#463634;
+    			     color: #ffffff;
+    			     border-radius: 25px;
+                    padding: 15px;
+                    margin-left: 25%;
+   				     margin-top: 12px;
+    			     margin-bottom: 14px;
+    			     font-weight: bold;
+    			     font-size: 20px;
+    			     transition: all 0.4s ease-in-out;
+    			     opacity: 0.9;
+}
+
+button:hover      {
+    			          background-color:#ffffff;
+    			          color:#e64933;
+    			          transition: all 0.4s ease-in-out;
+     			          opacity: 0.9;
+}
+
+a                 {
+                        color:#ffffff;
+    			          text-decoration: none;
+    			          
+}
+            
+a:hover           {
+                    background-color:#ffffff;
+                    color: #e64933;
+}
+
+.mybutton            {
+                     width: 100%;
+                     border: none;
+                     text-decoration: none;
+                     background-color:#463634;
+                     color: #ffffff;
+                     border-radius: 25px;
+                    padding: 15px;
+                    margin-top: 12px;
+                     margin-bottom: 14px;
+                     font-size: 20px;
+                     transition: all 0.4s ease-in-out;
+                     opacity: 0.9;
+}
+
+.mybutton:hover      {
+                          background-color:#e64933;
+                          color:#ffffff;
+                          transition: all 0.4s ease-in-out;
+                          opacity: 0.9;
+}
+
+
+.echomsg            {
+                        color: green;
+}
+.no-records{
+                        font-size:21px;
+                        color: red;
+}
+/* End */
+
+.text               {	
+                        float:right;
+                        margin-right: 15%;
+	                    color: #463634;
+	                    font-size: 25px;
+	                    margin-top:-2.5%;
+                        text-align: center;
+                        clear:both;
+}
+
+.wrapper	{
+    width:85%;
+padding: auto;
+margin: auto;
+
+}
+
+
+.covering            {
+    width: 40%;
+    margin-left: 10%;
+    font-size: 23px;
+    Color:#ffffff;
+    background:#e64933;
+    opacity: 0.8;
+    padding: 10px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4), 0 8px 22px 0 rgba(0, 0, 0, 0.21);
+    border-radius: 20px;
+    visibility: visible;
+    animation-delay: 0.9s;
+    animation-name: fadeInUp;
+}
+
+.wrap	{
+    width: 80%;
+    margin-left: 9.5%;
+    font-size: 23px;
+	Color:#ffffff;
+	background:#e64933;
+    padding: 10px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4), 0 8px 22px 0 rgba(0, 0, 0, 0.21);
+	border-radius: 20px;
+	opacity: 0.8;
+    visibility: visible;
+    animation-delay: 0.9s;
+    animation-name: fadeInUp;
+
+}
+
+.Covers{
+width:90%;
+padding: auto;
+margin: auto;
+}
+
+.btnEmpty, .Empty {
+    float: right;
+    background-color: #ffffff;
+    border: #b4a892 1px solid;
+    padding: 5px 10px;
+    color: #b4a892;
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 10px 0px;
+}
+
+.btnEmpty:hover{
+    color: #e64933;
+    background-color: #ffffff;
+}
+
+.Empty:hover{
+    color: white;
+    background-color: #e64933;
+}
+
+.profile_info{
+    float:right;
+    clear: both;
+}
+
+.error {
+	width: 90%; 
+	margin: 0px auto; 
+	padding: 10px; 
+	border: 1px solid #a94442; 
+	color: #a94442; 
+	background: #f2dede; 
+	border-radius: 5px; 
+	text-align: left;
+}
+.success {
+    width: 87%;
+	color: #e64933; 
+	background: #fae3df; 
+	border: 1px solid #e64933;
+	margin-bottom: 20px;
+}
+
+.content {
+    float: right;
+    width: 10%;
+    margin: 0px auto;
+}
